@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Overwatch</title>
+    <link rel="stylesheet" type="text/css" href="../css/css_index.css"/>
+    <style>
+        hr{
+            width:75%;  
+            margin: 20px;   
+            border-radius: 10px;
+            color: rgb(116, 116, 116);
+            border: 10px solid ;
+        }
+        #titulo{
+            color: #bb46ff;
+            text-decoration:underline;
+            text-shadow: 2px 2px #9ea0a08a;
+            font-size: 48px;
+            -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.589);
+        }
+        @media only screen and (max-width: 580px){
+            #Image4{
+            width: 60px;
+            height: 60px;
+            border: 1px solid #268874;
+            border-radius: 1px;
+            float: right;
+        }
+        }
+    </style>
+</head>
+<body onLoad="MM_preloadImages('img/teclado_sustitucion.png')">
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+    <div class="contenedor1">
+        <header>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+                
+                <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                
+                ctx.strokeStyle="rgb(90,90,90)"
+                ctx.beginPath();
+                  ctx.arc(95,50,40,-1,4);
+                  ctx.arc(95,50,32,4,-1,1);
+                  ctx.lineTo(118, 16);
+                  ctx.closePath();
+                  ctx.fillStyle = "rgb(90, 90, 90)";
+                  ctx.fill();
+                  ctx.stroke();
+                  
+                  ctx.strokeStyle="rgb(200, 150, 1)"
+                  ctx.beginPath();
+                  ctx.arc(95,50,40,4.1,-1.1);
+                  ctx.arc(95,50,32,-1.1,4.1,1);
+                  ctx.lineTo(72,17);
+                  ctx.fillStyle = "rgb(200, 150, 1)";
+                  ctx.fill();
+                  ctx.stroke();
+                  
+                  ctx.strokeStyle="rgb(90,90,90)"
+                  ctx.beginPath();
+                  ctx.lineTo(70, 70);
+                  ctx.lineTo(84, 50);
+                  ctx.lineTo(93, 30);
+                  ctx.lineTo(93, 58);
+                  ctx.lineTo(78, 78);
+                  ctx.fillStyle = "rgb(90,90,90)";
+                  ctx.fill();
+                  ctx.stroke();
+                  
+                  ctx.beginPath();
+                  ctx.lineTo(122, 70);
+                  ctx.lineTo(105, 50);
+                  ctx.lineTo(98, 30);
+                  ctx.lineTo(98, 58);
+                  ctx.lineTo(112, 78);
+                  ctx.fillStyle = "rgb(90,90,90)";
+                  ctx.fill();
+                  ctx.stroke();
+                  
+                </script> 
+        </header>
+        <nav>
+            <ul class="navegador">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="apoyo.html">Apoyo</a></li>
+                <li><a href="Daño.html">Daño</a></li>
+                <li><a href="tanques.html">Tanque</a></li>
+                <li><button><a href="inicio_sesion.html">Inicio sesion</a></button></li>
+                <li><button><a href="registro.html">Registrate</a></button></li>
+            </ul>
+        </nav>
+        <div class="contenido"> 
+            <div class="heroes">
+				<table>
+					<tr>
+						<th><img src="../imagenes/DVA.png"></th>
+						<th><img src="../imagenes/doomfist.png"></th>
+						<th><img src="../imagenes/Junker_queen.png"></th>
+						<th><img src="../imagenes/Orisa.png"></th>
+					</tr>
+					<tr>
+						<td>DVA</td>
+						<td>Doomfist</td>
+						<td>Junker Queen</td>
+						<td>Orisa</td>
+					</tr>
+					<tr>
+						<td><img src="../imagenes/reinhardt.png"></td>
+						<td><img src="../imagenes/roadhog.png"></td>
+						<td><img src="../imagenes/Sigma.png"></td>
+						<td><img src="../imagenes/Winston.png"></td>
+					</tr>
+					<tr>
+						<td>Reinhart</td>
+						<td>roadhog</td>
+						<td>Sigma</td>
+						<td>Winston</td>
+					</tr>
+					<tr>
+						<td><img src="../imagenes/wrecking_ball.png"></td>
+						<td><img src="../imagenes/Zarya.png"></td>
+					</tr>
+					<tr>
+						<td>Wrecking ball</td>
+						<td>Zarya</td>
+					</tr>
+				</table>
+			</div>
+        </div>
+        <footer>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com">
+                    <img src="../imagenes/facebook.png" class="fa fa-facebook"></img>
+                    </a>
+                </li>
+                <li><a href="https://www.twiter.com">
+                    <img src="../imagenes/twitter.png" class="fa fa-twitter"></img>
+                    </a>
+                </li>
+                <li><a href="https://www.youtube.com">
+                    <img src="../imagenes/youtube.png" class="fa fa-youtube"></img>
+                    </a>
+                </li>
+                <li><a href="https://www.linkedin.com">
+                    <img src="../imagenes/linkedin.png" class="fa fa-linkedin"></img>
+                    </a>
+                </li>
+            </ul>
+            <h3>30/05/2022</h3>
+            <h3 style="text-decoration: underline;">Ander Moro &copy;</h3>
+        </footer>
+    </div>
+</body>
+</html>
