@@ -88,22 +88,36 @@
             <ul class="navegador">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="apoyo.html">Apoyo</a></li>
-                <li><a href="Daño.html">Daño</a></li>
+                <li><a href="Daño.html">Danio</a></li>
                 <li><a href="tanques.html">Tanque</a></li>
-                <li><button><a href="inicio_sesion.html">Inicio sesion</a></button></li>
-                <li><button><a href="registro.html">Registrate</a></button></li>
+                <li>Tu cuenta
+                    <ul>
+                        <li><button><a href="inicio_sesion.html">Inicio sesion</a></button></li>
+                        <li><button><a href="registro.html">Registrate</a></button></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div class="contenido"> 
            <div class="formulario">
-                INICIO DE SESION:
-				<form>
-					<label for="user">Correo o usuario</label><br>
-					<input type="text" id="user" name="user" value="josemi 10 pls"><br><br>
-					<label for="password">contraseña</label><br>
-					<input type="password" id="password" name="password"><br><br>
-                    <input type="button" id=enviar value="Conectarse" name="Conectarse">
-				</form>
+            <div class="formulario">
+                <h2>Ya estas de vuelta? Te echabamos de menos</h2>
+                    <form>
+                        <div class="detalles_usuario">
+                            <div class="input-box">
+                                <span class="detalles">Usuario</span>
+                                <input type="text" placeholder="Usuario">
+                            </div>
+                            <div class="input-box">
+                                <span class="detalles">Contrasenia</span>
+                                <input type="password" placeholder="Contraseña">
+                            </div>
+                        </div>
+                        <div class="boton">
+                            <input type="submit" value="Inicio de Sesion">
+                        </div>
+                    </form>
+                </div>
 			</div>
         </div>
         <footer>

@@ -88,28 +88,47 @@
             <ul class="navegador">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="apoyo.html">Apoyo</a></li>
-                <li><a href="Daño.html">Daño</a></li>
+                <li><a href="Daño.html">Danio</a></li>
                 <li><a href="tanques.html">Tanque</a></li>
-                <li><button><a href="inicio_sesion.html">Inicio sesion</a></button></li>
-                <li><button><a href="registro.html">Registrate</a></button></li>
+                <li>Tu cuenta
+                    <ul>
+                        <li><button><a href="inicio_sesion.html">Inicio sesion</a></button></li>
+                        <li><button><a href="registro.html">Registrate</a></button></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div class="contenido"> 
             <div class="formulario">
-                <label for="Nombre">Nombre:</label>
-                <input type="text" name="Nombre"><br><br>
-                <label for="usuario">usuario:</label>
-                <input type="text" name="usuario"><br><br>
-                <label for="email">Mail:</label>
-                <input type="email" name="email"><br><br>
-                <label for="contraseña">contraseña:</label>
-                <input name="password" name="contraseña"></input><br>
-                <label for="contraseña2">Vuelva a escribir la contraseña:</label>
-                <input name="password" name="contraseña2"></input>
-                <p id="formuinput">
-                <input type="submit" class="boton boton-verde" value="Enviar Datos">
-                </p>
-        </div>
+            <h2>Registrate para un futuro mejor</h2>
+                <form>
+                    <div class="detalles_usuario">
+                        <div class="input-box">
+                            <span class="detalles">Nombre</span>
+                            <input type="text" placeholder="Nombre Completo">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalles">Usuario</span>
+                            <input type="text" placeholder="Nombre de usuario">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalles">email</span>
+                            <input type="text" placeholder="E-mail completo">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalles">contrasenia</span>
+                            <input type="text" placeholder="Contraseña">
+                        </div>
+                        <div class="input-box">
+                            <span class="detalles">Escriba otra vez su contrasenia</span>
+                            <input type="text" placeholder="Contraseña (si, otra vez)">
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" value="crear cuenta">
+                    </div>
+                </form>
+            </div>
         </div>
         <footer>
             <ul class="socials">
