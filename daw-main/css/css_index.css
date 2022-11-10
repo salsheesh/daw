@@ -38,9 +38,8 @@
 
 /* Header */
 canvas{
-  margin-left:85vh;
-  width: 15%; 
-  background-color: rgb(211, 211, 211);
+  margin-left:40%;
+  width: 20%; 
 }
 /* nav */
 .navegador{
@@ -81,7 +80,11 @@ li button{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
 }
+li button:hover{
+	background-color: #1f4e26;
+  }
 .tab {
   overflow: hidden;
 }
@@ -98,23 +101,19 @@ li button{
 .tab button:hover {
   background-color: #ddd;
 }
-.tab button.active {
-  background-color: #ccc;
-  border: 1px solid rgb(77, 76, 76); 
-  border-bottom: 0px;
-}
 /* contenido */
 .contenido{
   background: rgb(255,255,255);
   background: linear-gradient(90deg, rgb(163, 163, 163) 0%, rgba(129,133,136,1) 25%, rgba(191,194,196,1) 63%, rgba(136,136,136,1) 92%);
-    margin-left: 6cm;
-    margin-right: 6cm;
+    margin-left: 4cm;
+    margin-right: 4cm;
     margin-top: 3.5cm;
     margin-bottom: 2cm;
     padding: 2cm;
     align-items:center;
 	z-index:-1;
 }
+/* index*/
 .container {
   position: relative;
   width: 100%;
@@ -128,16 +127,12 @@ li button{
   width: 100%;
   height: 100%;
 }
-p{
-  font-size: 28px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 h1{
   color: rgb(20, 107, 189);
   font-size: 48px;
   font-family: sportesia;
 }
+/* info */
 .heroes{
   margin: auto;
   margin-bottom:0px;
@@ -149,10 +144,15 @@ h1{
 .imagen{
   border-radius: 50%;
   border:6px solid #196c70; padding:5px;
+  height: 170px;
+}
+.imagen:hover{
+	height: 180px;
+	width: 180px;
 }
 .Nombre{
   color: rgb(20, 107, 189);
-  font-size: 24px;
+  font-size: 20px;
   font-family: sportesia;
   text-align: center;
 }
@@ -224,9 +224,7 @@ h2{
   text-align: center;
   color: rgb(65, 63, 63);
 }
-footer{
-  padding:10px;
-}
+/* footer */
 .socials{
   float:left;
 	margin: auto;
@@ -235,41 +233,76 @@ footer{
   display: flex;
   justify-content: center;
   align-content: flex-end;
-  align-items: center;
+  align-items: baseline;
 }
-@media only screen and (max-width: 580px){
-	.contenido{margin: 1cm;
-				padding: 1cm;}  
+@media only screen and (max-width: 1007px){
+	.contenido{margin: 2cm;
+				padding: 2cm;}  
 	canvas{
 		margin-left:40%;
-		width: 20%; 
 	} 
 	video{
+		margin: 0;
+		margin-top: 20px;
 		width: 360px;
 		height: 240px;
 	}
-	p{font-size: 12px;}
-	h1{font-size: 16px;}
-	#info{
-		font-size: 10px;
-	}
+	h1{font-size: 24px;}
 	ul li{
 		list-style: none;
-		margin-left: 80px;
-		height: 12%;
-		font-size: 28px;
+		margin-left: 20px;
+		height: 20px;
+		font-size: 18px;
 	}
+	ul li a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 18px;
+	}
+  .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .detalles_usuario{
+    max-height: 300px;
+    overflow-y:scroll;}
+  .imagen{
+	width:110px;
+	height: 110px;
+  }
+  .Nombre{
+	font-size: 12px;
+  }
+  .imagen:hover{
+	height: 120px;
+	width: 120px;
+}
+
+}
+
+@media only screen and (max-width: 640px){
+	.contenido{margin: 1cm;
+				padding: 1cm;}  
+	canvas{
+		margin-left:40%; 
+	} 
+	video{
+		margin-top: 20px;
+		width: 360px;
+		height: 240px;
+		margin: 0;
+	}
+	h1{font-size: 16px;}
 	ul li{
-	margin-left: 6px;
+		list-style: none;
+		margin-left: 20px;
+		height: 12%;
+		font-size: 12px;
 	}
 	ul li a{
 		text-decoration: none;
 		color: #fff;
 		font-size: 12px;
-	}
-	ul li a:hover{
-	font-weight: bold;
-	font-size: 16px;
 	}
   .input-box{
     margin-bottom: 15px;
@@ -281,6 +314,17 @@ footer{
   }
   .detalles_usuario::-webkit-scrollbar{
     width: 0;
+  }
+  .imagen{
+	width:60px;
+	height: 60px;
+  }
+  .Nombre{
+	font-size: 8px;
+  }
+  .imagen:hover{
+	height: 70px;
+	width: 70px;
   }
 
 }
