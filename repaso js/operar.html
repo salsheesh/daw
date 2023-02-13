@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+</head>
+<body>
+    <script>
+        function mover(){
+            window.moveTo(700, 400);
+        }
+        function dimension(){
+            let width = prompt("Introduse el ansho");
+            let height = prompt("Introduse el altisho");
+
+            window.resizeTo(width, height);
+        }
+    </script>
+<h1>Operar con ventanas</h1>
+<br>
+<p>Para manipular la ventana elija una de las siguientes ventanas:</p>
+<ul>
+    <li><a onclick="mover()">Mover ventana</a></li>
+    <li><a onclick="dimension()">Cambiar dimension</a></li>
+</ul>
+</body>
+</html>

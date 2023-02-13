@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+</head>
+<body id="pintar">
+    <script>
+        function agranda(){
+            var myWindow = window.open("operar.html","","width=500,height=450");
+        }
+        function Objetos(){
+            var myWindow = window.open("objetos.html","","width=500,height=450");
+        }
+        function cambiar(){
+            let colores=document.getElementById("color").value;
+            document.body.style.color = colores;
+            console.log(colores);
+        }
+    </script>
+<h1>Operaciones con ventanas</h1><button onclick="agranda()">Operar</button>
+<br>
+<ol>
+    <li><a onclick="Objetos()">Trabajando con Objetos</a></li>
+    <li><a onclick="Objetos()">Trabajando con Objetos</a></li>
+    <li><a onclick="Objetos()">Trabajando con Objetos</a></li>
+</ol>
+<h2>Selecciona un color:</h2>
+<br>
+<select id="color">
+    <option value="nada">nada</option>
+    <option value="red">rojo</option>
+    <option value="black">negro</option>
+    <option value="green">verde</option>
+</select>
+<button onclick="cambiar()">modifica color</button>
+</body>
+</html>
